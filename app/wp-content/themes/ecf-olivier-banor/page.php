@@ -32,7 +32,6 @@ if(have_posts()) : // Si il y a des posts (articles, pages etc...) à afficher
             </a>
         </h1>
         <p class="card-date"> Banor Olivier </p>
-        <p > <?php bloginfo('name'); ?></p>
     </header>
     <section>
         

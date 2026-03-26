@@ -4,10 +4,10 @@ Author: Obanor
 */
 
 :root {
-    --bg: white;
+    --bg: rgb(226, 226, 226);
     --primary: black;
     --secondary: #1b296a;
-    --tertiary: rgb(218, 209, 209);
+    --tertiary: rgb(226, 226, 226);
     --thirdiere: #ed6840;
 }
 
@@ -24,7 +24,7 @@ body {
 
 a {
     text-decoration: none;
-    color: var(--primary)
+    color: var(--secondary)
 }
 
 img {
@@ -109,10 +109,18 @@ img {
     color: var(--primary);
 }
     */
+.wp-block-categories{
+    list-style: none;
+    padding: 10px;
+    margin-top: 20%;
+}
+
 .site-aside {
+
+    text-decoration: none;
     float: left;
     width: 20%;
-        margin-top: 0;
+    margin-top: 0;
     background-color: var(--tertiary);
     color: var(--primary);
 }
@@ -146,7 +154,7 @@ img {
 
 .card-date {
     position: absolute;
-    top: 20%;
+    top: 60%;
     left: 10px;
     background: var(--thirdiere);
     padding: 2px;
@@ -158,7 +166,7 @@ img {
 }
 
 .card-thumb {
-    height: 220px;
+    height: 800px;
     background-repeat: no-repeat;
     background-size: cover;
 }

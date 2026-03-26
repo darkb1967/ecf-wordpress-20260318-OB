@@ -39,10 +39,24 @@ if(have_posts()) : // Si il y a des posts (articles, pages etc...) à afficher
         if(is_singular()) { // si affichage d'un article
             the_content();
         } else {
+            the_archive_title();
             the_excerpt();  // si page d'archive (liste de posts)
         }
             
         ?>
+        
+    <div class="pagination">
+        <div class="pagination-previous">
+            <?php previous_posts_link('Contenu précédent'); ?>
+        </div>
+        <div class="pagination-next">
+            <?php next_posts_link('Contenu suivant');  ?>
+        </div>
+    </div>
+
+    <div>
+        <?php the_posts_pagination(); ?>
+    </div>
     </section>
 </article>
 

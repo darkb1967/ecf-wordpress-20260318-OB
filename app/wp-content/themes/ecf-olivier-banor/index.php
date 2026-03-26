@@ -32,7 +32,6 @@ if(have_posts()) : // Si il y a des posts (articles, pages etc...) à afficher
             </a>
         </h1>
         <p class="card-date"> Banor Olivier <span></span></p>
-        <p > <?php bloginfo('name'); ?></p>
     </header>
     <section>
         
@@ -44,6 +43,18 @@ if(have_posts()) : // Si il y a des posts (articles, pages etc...) à afficher
         }
             
         ?>
+            <div class="pagination">
+        <div class="pagination-previous">
+            <?php previous_posts_link('Contenu précédent'); ?>
+        </div>
+        <div class="pagination-next">
+            <?php next_posts_link('Contenu suivant');  ?>
+        </div>
+    </div>
+
+    <div>
+        <?php the_posts_pagination(); ?>
+    </div>
     </section>
 </article>
 

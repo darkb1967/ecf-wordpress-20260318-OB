@@ -5,10 +5,6 @@
     </footer>
 </div> <!-- fin wrapper -->
 
-<aside class="site-aside">
-    <!-- SIDEBAR -->
-    <?php dynamic_sidebar('principal'); ?>
-</aside>
 <?php wp_footer(); ?>
 </body>
 </html>

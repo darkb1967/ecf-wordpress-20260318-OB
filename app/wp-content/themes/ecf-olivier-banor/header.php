@@ -11,18 +11,17 @@
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
     <header class="site-header">
-        <a href="/">
-            <img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/pikatchu.jpg" alt="Logo de Toto">
-        </a>
+        <a href="/"> <h1>Les viles du monde</h1> </a>
         <div class="site-navigation">
-            <p class="site-title"><?php bloginfo('name'); ?>
-                <br>
-                <span><?php bloginfo('description'); ?></span></p>
             <nav>
-                <?php wp_nav_menu(['theme_location' => 'menuPrincipal']); ?> 
+                <?php wp_nav_menu(['theme_location' => 'top-menu']); ?> 
             </nav>
         </div>
     </header>
     <div class="wrapper">
     <main class="site-main">
-        <!-- FIN HEADER -->
+        <aside class="site-aside">
+            <!-- SIDEBAR -->
+            <?php dynamic_sidebar('principal'); ?>
+        </aside>
+    <!-- FIN HEADER -->

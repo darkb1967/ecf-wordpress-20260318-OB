@@ -1,0 +1,14 @@
+/*
+Theme Name: Les villes du monde
+Author: Obanor
+*/
+
+:root {
+    --bg: black;
+    --primary: #FFDE00;
+    --secondary: #B3A125;
+    --tertiary: #3B4CCA;
+    --fourth: #CC0000;
+    --fifth: #FF0000;
+    --header-top: 135px;
+}

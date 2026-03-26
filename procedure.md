@@ -34,7 +34,7 @@ J'ai fais un FORK de ce dépôt et l'ai nommez "ecf-wordpress-20260318-OB".
 
 ### Étape 2 : Modularité
 
-Préparez votre structure HTML en créant les fichiers de base :
+J'ai préparez ma structure HTML en créant les fichiers de base :
 
 1.  **header.php** et **footer.php** pour la structure HTML
 3. **archive.php** et **single.php** pour l'affichage des articles
@@ -46,10 +46,11 @@ Préparez votre structure HTML en créant les fichiers de base :
 
 ### Étape 3 : Fonctionnalités du thème 
 
-1.  Dans **functions.php :** ajouter : 
+1.   **functions.php :** j'ai ajouter : 
     - La prise en charge des images de mise en avant (Thumbnails)
     - **Sidebar :** Déclarez un emplacement de sidebar nommé "left-sidebar" qui affichera les catégories.
     - **Menu :** Déclarez un emplacement de menu nommé "top-menu".
+    
 2.  **Administration :** Allez dans l'administration WP, créez un menu, liez-le à l'emplacement créé et ajoutez-y Les articles visibles dans le menu supérieur de la maquette + la page "à propos".
 4.  **Affichage :** Définir l'emplacement de la sidebar et du menu en vous inspirant de la maquette fournie.
 

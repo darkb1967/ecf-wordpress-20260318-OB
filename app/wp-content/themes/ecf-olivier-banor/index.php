@@ -17,7 +17,7 @@ if(have_posts()) : // Si il y a des posts (articles, pages etc...) à afficher
         if(has_post_thumbnail()) { // si une image de mise en avant est attraché à l'article
             $th = get_the_post_thumbnail_url(null, 'large'); 
         } else { // pas d'image de mise en avant
-            $th = get_template_directory_uri().'/assets/nophoto.jpg';
+            $th = get_template_directory_uri().'/img/image.png';
         }
 
 ?>
@@ -31,7 +31,8 @@ if(have_posts()) : // Si il y a des posts (articles, pages etc...) à afficher
                 <?php the_title(); ?>
             </a>
         </h1>
-        <p class="card-date"> Banor Olivier <?php bloginfo('name'); ?></p>
+        <p class="card-date"> Banor Olivier <span></span></p>
+        <p > <?php bloginfo('name'); ?></p>
     </header>
     <section>
         

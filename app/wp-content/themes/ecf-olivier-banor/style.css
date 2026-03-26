@@ -8,6 +8,7 @@ Author: Obanor
     --primary: black;
     --secondary: #1b296a;
     --tertiary: rgb(218, 209, 209);
+    --thirdiere: #ed6840;
 }
 
 body {
@@ -17,6 +18,7 @@ body {
     max-width: 100%;
     margin: 0;
     background-color:var(--bg);
+    color: var(--primary)
    /* transition: all ease .4s;*/
 }
 
@@ -144,10 +146,15 @@ img {
 
 .card-date {
     position: absolute;
-    top: 10px;
+    top: 20%;
     left: 10px;
-    background: #ffffff66;
+    background: var(--thirdiere);
     padding: 2px;
+}
+
+.card-titre{
+    color: white;
+
 }
 
 .card-thumb {

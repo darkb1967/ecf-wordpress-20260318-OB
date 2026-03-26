@@ -4,11 +4,170 @@ Author: Obanor
 */
 
 :root {
-    --bg: black;
-    --primary: #FFDE00;
-    --secondary: #B3A125;
-    --tertiary: #3B4CCA;
-    --fourth: #CC0000;
-    --fifth: #FF0000;
-    --header-top: 135px;
+    --bg: white;
+    --primary: black;
+    --secondary: #1b296a;
+    --tertiary: rgb(218, 209, 209);
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0;
+    background-color:var(--bg);
+   /* transition: all ease .4s;*/
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary)
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ENTETE DU SITE */
+
+.site-header {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--tertiary);
+    box-shadow: 0 0 20px var(--bg);
+    width: 100%;
+    justify-content: space-between;
+}
+
+.site-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0 0 20px;
+    color: var(--primary)
+}
+
+.site-title span {
+    font-size: 12px;
+}
+
+
+/* MENU PRINCIPAL */
+
+.site-header > nav{
+    width: 100%;
+}
+
+.site-navigation {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+
+    gap: 5px;
+}
+
+.menu a {
+    display:block;
+    padding: 10px;
+    color: var(--primary);
+    background-color: var(--tertiary);
+}
+
+.menu a:hover {
+    color: var(--secondary);
+    background-color: #FFFFFF20;
+    box-shadow: 0 0 10px var(--primary);
+}
+
+/* CONTENU PRINCIPAL */
+
+.wrapper {
+    flex: 1;
+    margin-top: var(--header-top);
+}
+
+/* SIDEBAR */
+
+/*
+.site-aside {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 200px;
+    flex: 0 0 200px;
+    margin-top: 0;
+    background-color: var(--tertiary);
+    color: var(--primary);
+}
+    */
+.site-aside {
+    float: left;
+    width: 20%;
+        margin-top: 0;
+    background-color: var(--tertiary);
+    color: var(--primary);
+}
+
+/* PIED DE PAGE DU SITE */
+
+.site-footer {
+    padding: 3rem;
+    background-color: var(--tertiary);
+    color: var(--primary);
+    text-align: center;
+}
+
+
+/* AFFICHAGE 1 ARTICLE */
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: stretch; /* valeur par défaut */
+}
+
+.card {
+    background: #00000022;
+    position: relative;
+    width: 360px;
+    max-width: 100%;
+}
+
+.card-date {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #ffffff66;
+    padding: 2px;
+}
+
+.card-thumb {
+    height: 220px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-thumb img {
+    /*height: 100%;*/
+    width: 100%;
+}
+
+.card:hover img {
+    transform: scale(110%);
+    transition: all ease 0.8s;
+}
+
+
+.wp-singular .card {
+    width: 1200px;
+    margin: 0 auto;
 }

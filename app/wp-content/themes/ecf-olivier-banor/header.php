@@ -11,7 +11,7 @@
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
     <header class="site-header">
-        <a href="/"> <h1>Les viles du monde</h1> </a>
+        <a href="/"> <h1>Les villes du monde</h1> </a>
         <div class="site-navigation">
             <nav>
                 <?php wp_nav_menu(['theme_location' => 'top-menu']); ?> 
